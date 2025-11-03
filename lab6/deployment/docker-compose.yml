@@ -2,17 +2,17 @@ volumes:
   spark-data:
     driver_opts:
       type: none
-      device: /home/${USER_HOME}/data
+      device: /home/gije_gilbert/data
       o: bind
   notebooks:
     driver_opts:
       type: none
-      device: /home/${USER_HOME}/notebooks
+      device: /home/gije_gilbert/notebooks
       o: bind
   spark-checkpoint:
     driver_opts:
       type: none
-      device: /home/${USER_HOME}/checkpoint
+      device: /home/gije_gilbert/checkpoint
       o: bind
 services:
   spark-driver-app:
